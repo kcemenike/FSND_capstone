@@ -1,0 +1,948 @@
+{
+	"info": {
+		"_postman_id": "7fb1673b-edf3-496a-9511-1accb567ef6a",
+		"name": "kcemenike",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "public",
+			"item": [
+				{
+					"name": "/authors",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3a932398-f48e-464f-8e59-ff44f1d1898e",
+								"exec": [
+									"pm.test(\"Status code is 401\", function () {",
+									"    pm.response.to.have.status(401);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/authors",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"authors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/books",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "e287dc00-b432-46f3-8c64-4aa15ea732bd",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/books",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/authors",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1d128a29-6fff-4c40-ba42-bf1a976e0445",
+								"exec": [
+									"pm.test(\"Status code is 401\", function () {",
+									"    pm.response.to.have.status(401);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/authors",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"authors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/books",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "39c47289-6f98-42e4-b3e3-73627eb4dfdd",
+								"exec": [
+									"pm.test(\"Status code is 401\", function () {",
+									"    pm.response.to.have.status(401);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/books",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/authors/1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "89915ecc-da38-40e9-ace4-bec415d87d8f",
+								"exec": [
+									"pm.test(\"Status code is 401\", function () {",
+									"    pm.response.to.have.status(401);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/authors/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"authors",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/books/1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "101e5f77-24e7-4625-b9fc-5341c6b99d9f",
+								"exec": [
+									"pm.test(\"Status code is 401\", function () {",
+									"    pm.response.to.have.status(401);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/books/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"books",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/authors/1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "e6a06a64-3b3c-4151-83d5-d9a6bca64f73",
+								"exec": [
+									"pm.test(\"Status code is 401\", function () {",
+									"    pm.response.to.have.status(401);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/authors/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"authors",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/books/1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "2a53f233-c6db-42c0-b4b5-b50d86c47515",
+								"exec": [
+									"pm.test(\"Status code is 401\", function () {",
+									"    pm.response.to.have.status(401);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/books/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"books",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "student",
+			"item": [
+				{
+					"name": "/authors",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "011e23a9-4553-4530-a765-4e8002e4a512",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/authors",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"authors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/books",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "07d8ff37-edc2-486f-9c01-eb9c6683d365",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/books",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/authors",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "d982ebd2-1aee-4d08-a179-cd9af6ff02db",
+								"exec": [
+									"pm.test(\"Status code is 403\", function () {",
+									"    pm.response.to.have.status(403);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstname\": \"Kelechi\",\n    \"lastname\": \"EMENIKE\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/authors",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"authors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/books",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "548aa582-6595-4b0d-933d-4ebf9c15b185",
+								"exec": [
+									"pm.test(\"Status code is 403\", function () {",
+									"    pm.response.to.have.status(403);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Python Fundamentals\",\n    \"year\": 1999,\n    \"category\": \"Technology\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/books",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/authors/1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "29abc935-cbf5-47fd-ad8f-face7d236296",
+								"exec": [
+									"pm.test(\"Status code is 403\", function () {",
+									"    pm.response.to.have.status(403);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstname\": \"Kelechi\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/authors/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"authors",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/books/1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "ddfd0be2-8264-4f38-b2b8-f41b2781f5fb",
+								"exec": [
+									"pm.test(\"Status code is 403\", function () {",
+									"    pm.response.to.have.status(403);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Python Basics\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/books/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"books",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/authors/1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "c4edaf51-eb0c-4fc0-a506-899f525fcc4b",
+								"exec": [
+									"pm.test(\"Status code is 403\", function () {",
+									"    pm.response.to.have.status(403);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/authors/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"authors",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/books/1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "cd61de77-684b-43c1-aff9-69ee21ab2bbe",
+								"exec": [
+									"pm.test(\"Status code is 403\", function () {",
+									"    pm.response.to.have.status(403);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/books/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"books",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Imd6cWVhLVdoUWNQV20xUmpMYjJObiJ9.eyJpc3MiOiJodHRwczovL2tjZW1lbmlrZS5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWVhNjM4YjI1NGIxNGMwYzEyNWExNmQzIiwiYXVkIjoia2NlbWVuaWtlIiwiaWF0IjoxNTg4MTUwNjIxLCJleHAiOjE1ODgyMjI2MjEsImF6cCI6IlZyQlg4TFJxNmYwV1dhTk96Q3YwZEJBbjlTa3RMNkRUIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJnZXQ6YXV0aG9ycyIsImdldDpib29rcyIsImdldDpkcmlua3MtZGV0YWlsIl19.WDg31H0zJmUOKRrN3Jf0O6P1aTDknfffi0o8kXy3ALQKbY3RzX2pOI7jcwtEvVM4tqfiKIwbIgt7smof6NSXnKfTEabGeD1qMxID4DhS-kMLFSGT2EYRi2okNCQA6V6iQw3XC-QZi05dbF65ONvyR4V8Nvu-qiiL1boRLRLYF_xCkwS8gQ_Kdc7sLfcTkiIM5zk9oSbs2G5f8Z5t2KlP0dluwsxPODgYcptC7ogJQ_Q84c7U8whgDT6JUHmQZ0BEnwFQKjklJLw5YIZlFQk4roFPwRq2VTuyfE65DSgq_IZvnMjZfAblaDbHbELRLFPWybqQa7h71f2egqUyKsxmow",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "bfd2b9e6-7e3a-4195-acd6-997621d49259",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "9e26060b-e2b4-4641-beb2-5f7b0ee3839f",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "publisher",
+			"item": [
+				{
+					"name": "/authors",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "e9a75264-266b-432a-9c24-6d1debd22840",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"value contains authors array\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.authors).to.be.an('array')",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/authors",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"authors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/books",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "b022ddaa-f06d-45e5-890c-aa13e2ada7e5",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"value contains books array\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.books).to.be.an('array')",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/books",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/authors",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "ceb9b074-c416-414b-bcb6-b3b0fa657172",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstname\": \"Kelechi\",\n    \"lastname\": \"EMENIKE\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/authors",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"authors"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/books",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7dc8823a-6aac-4dfa-92db-6f2f620e34cd",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Python Fundamentals\",\n    \"year\": 1999,\n    \"category\": \"Technology\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/books",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"books"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/authors/1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "c9cab8db-dbf8-45c0-9397-e673d446519a",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstname\": \"Kelechi C.\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/authors/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"authors",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/books/1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "59bc8f7c-6dd6-433d-be64-3bfab5e23ce7",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Python Basics\"\n}"
+						},
+						"url": {
+							"raw": "{{host}}/books/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"books",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/books/1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "40d20d28-8138-475c-aefe-966a8e472b11",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/books/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"books",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/authors/1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3b430a81-ab32-4045-bb94-b08f19d95449",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/authors/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"authors",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Imd6cWVhLVdoUWNQV20xUmpMYjJObiJ9.eyJpc3MiOiJodHRwczovL2tjZW1lbmlrZS5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWVhNjM4ZDYxY2MxYWMwYzE0NjhjZGNlIiwiYXVkIjoia2NlbWVuaWtlIiwiaWF0IjoxNTg4MTUwNjk5LCJleHAiOjE1ODgyMjI2OTksImF6cCI6IlZyQlg4TFJxNmYwV1dhTk96Q3YwZEJBbjlTa3RMNkRUIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6WyJkZWxldGU6YXV0aG9ycyIsImRlbGV0ZTpib29rcyIsImRlbGV0ZTpkcmlua3MiLCJnZXQ6YXV0aG9ycyIsImdldDpib29rcyIsImdldDpkcmlua3MtZGV0YWlsIiwicGF0Y2g6YXV0aG9ycyIsInBhdGNoOmJvb2tzIiwicGF0Y2g6ZHJpbmtzIiwicG9zdDphdXRob3JzIiwicG9zdDpib29rcyIsInBvc3Q6ZHJpbmtzIl19.lZ7VMPIsEKei5OeR0F5a7BcijYXKZlN0MQIj7qH1OCG-qvm9b_cJYC63aLNGZp7gE9VRakEjRCIvZb-MHgjN7GYeorSAOZ17nszgjJbuE2LzYQmyGQM76VBuymEexVWo2R1SdhtlprwdoF-qVVir9_r4lIB1Evai_QZOpC0c1s8jeZvgz8EOGNOaFJMvBWiTjRf1AaPfdVyz2_WwBdLK9ZZuoiT7_3Pn1TZy2UuADVzEhykWLSzRck8t53bShhewyE90GKfk6fXamtqYn_MegaDMCXDuNBml2vYZ72MJPriEJN7QBUE9yOKzQj6QN31b7t5kyjI6fH48ZOnAn7nrlw",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "5afd6d56-e15e-430a-956c-0fff9b1ac426",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "709d0f15-9c1a-4ea9-8f8f-d4258d148d3c",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "56203e97-db9e-45a6-80da-804deeae8b0c",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "61c9003b-4678-4de0-b059-42eb89541eaa",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "7da0fa13-ecd9-4d7d-8e38-fde2c81cfdaf",
+			"key": "host",
+			"value": "localhost:5000",
+			"type": "string"
+		}
+	],
+	"protocolProfileBehavior": {}
+}
