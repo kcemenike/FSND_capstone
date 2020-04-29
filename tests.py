@@ -11,8 +11,8 @@ from src.database.models import setup_db, Author, Book
 load_dotenv()
 
 
-class LibraryTestCase(unittest.TestCase):
-    """This class represents the CastingAgency test case"""
+class BookstoreTestCase(unittest.TestCase):
+    """This class represents the Bookstore test case"""
 
     def setUp(self):
         """Define test variables and initialize app."""
