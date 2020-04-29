@@ -3,7 +3,6 @@ from flask import Flask, request, jsonify, abort
 from sqlalchemy import exc
 import json
 from flask_cors import CORS
-from flask_migrate import Migrate
 
 from .database.models import setup_db, Book, Author
 from .auth.auth import AuthError, requires_auth
@@ -12,7 +11,6 @@ from .auth.auth import AuthError, requires_auth
 def create_app(test_config=None):
     app = Flask(__name__)
     db = setup_db(app)
-    migrate = Migrate(app, db)
     CORS(app)
 
     @app.after_request
