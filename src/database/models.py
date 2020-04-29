@@ -17,6 +17,7 @@ pw = os.getenv("database_password")
 dbname = os.getenv("production_db")
 
 database_path = f'''postgresql://{dbuser}:{pw}@{srv}:{port}/{dbname}'''
+database_path = os.environ['DATABASE_URL']
 
 db = SQLAlchemy()
 

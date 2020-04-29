@@ -20,15 +20,6 @@ class LibraryTestCase(unittest.TestCase):
         self.testing = True
         self.client = self.app.test_client
 
-        # self.svr = os.getenv("server")
-        # self.port = os.getenv("port")
-        # self.dbname = os.getenv("test_db")
-        # self.dbusr = os.getenv("database_user")
-        # self.dbpass = os.getenv("database_password")
-        # self.dbpath = \
-        #     f"postgresql://{self.dbusr}:{self.dbpass}@{self.svr}/{self.dbname}"
-        # self.db = setup_db(self.app)
-
         # binds the app to the current context
         with self.app.app_context():
             self.db = SQLAlchemy()
